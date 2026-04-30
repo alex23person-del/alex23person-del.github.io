@@ -5,63 +5,47 @@ body {
   font-family: system-ui, Arial, sans-serif;
 }
 
-/* NAV BAR */
+/* NAV (smaller spacing) */
 .nav {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  padding: 20px;
+  gap: 10px;
+  padding: 10px;
 }
 
-/* BUTTON LOOK */
+/* BUTTONS */
 .button {
+  display: inline-block;
   background: #1a1a1d;
-  color: #eaeaea;
-  padding: 12px 18px;
-  border-radius: 8px;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
   text-decoration: none;
-  font-size: 16px;
-  transition: 0.2s ease;
+  font-weight: 500;
 }
 
-.button:hover {
-  background: #ffcc00;
-  color: black;
-  transform: scale(1.05);
-}
-
-/* HERO SECTION */
+/* HERO (THIS IS THE BIG FIX) */
 .hero {
-  min-height: 70vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 40px;
+  padding: 30px 20px;
+  min-height: unset; /* removes big empty space */
 }
 
+/* TEXT */
 .hero h1 {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  line-height: 1.5;
-  max-width: 900px;
+  max-width: 800px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin: 0;
 }
 
-/* HIGHLIGHTED WORD */
-.highlight {
-  color: #ffcc00;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
-}
-
-/* FOOTER */
+/* FOOTER (pulls it closer) */
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 10px;
+  font-size: 0.9rem;
   opacity: 0.8;
-}
-
-footer a {
-  color: #eaeaea;
 }
